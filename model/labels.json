@@ -1,0 +1,226 @@
+{
+ "version": "v1",
+ "created": "2026-11-07",
+ "input_size": 224,
+ "mean": [
+  0.485,
+  0.456,
+  0.406
+ ],
+ "std": [
+  0.229,
+  0.224,
+  0.225
+ ],
+ "preprocess": "RGB; resize shorter side to input_size; centre crop; (pixel/255 - mean)/std; NCHW float32",
+ "classes": [
+  "amber_fossil",
+  "anahoplites",
+  "arietites",
+  "asteroceras",
+  "belemnite_guard",
+  "calymene_trilobite",
+  "clypeus_echinoid",
+  "crinoid_general",
+  "dactylioceras",
+  "dalmanites_trilobite",
+  "deshayesites",
+  "echinocorys_echinoid",
+  "eldredgeops_phacops",
+  "euhoplites",
+  "gryphaea_fossil",
+  "harpoceras",
+  "hemicidaris_echinoid",
+  "hildoceras",
+  "hoplites",
+  "hybodus_shark_fin_spine",
+  "lituites_cephalopod",
+  "micraster_echinoid",
+  "montlivaltia_coral",
+  "paradoxides_trilobite",
+  "pecten_bivalve",
+  "perisphinctes",
+  "phylloceras",
+  "promicroceras",
+  "rhynchonella_brachiopod",
+  "schloenbachia",
+  "spondylus_bivalve",
+  "terebratula_brachiopod"
+ ],
+ "pending": [
+  "becheiceras",
+  "cadoceras",
+  "cyclothyris_brachiopod",
+  "kosmoceras",
+  "lithostrotion_coral",
+  "megalodon_tooth",
+  "mesozoic_marine_reptiles",
+  "nautilus_fossil",
+  "ogygiocarella_trilobite",
+  "otodus_shark_tooth",
+  "quenstedtoceras",
+  "striatolamia_shark_tooth",
+  "titanites",
+  "trace_fossils",
+  "xipheroceras"
+ ],
+ "location_penalty": 0.05,
+ "regions": {
+  "dorset_lias": "Charmouth / Lyme Regis",
+  "yorkshire": "Whitby / Yorkshire Coast",
+  "kent_gault": "Folkestone / Gault Clay",
+  "cotswolds": "Cotswolds / Inferior Oolite",
+  "isle_of_wight": "Isle of Wight",
+  "somerset": "Somerset / Watchet",
+  "dorset_other": "Dorset (Kimmeridge / Portland / Oolites)",
+  "east_anglia": "East Anglia / Peterborough (Oxford Clay)",
+  "wilts_berks_oxon": "Wiltshire / Berkshire / Oxfordshire",
+  "lincolnshire": "Lincolnshire / East Midlands",
+  "chalk_south": "Southern Chalk (Sussex / Kent / Dorset)",
+  "london_clay": "London Clay (Essex / Sheppey / Thames)",
+  "wales_midlands": "Wales / Welsh Borders / Dudley",
+  "overseas": "Outside the UK"
+ },
+ "species_regions": {
+  "amber_fossil": [
+   "yorkshire",
+   "east_anglia",
+   "overseas"
+  ],
+  "anahoplites": [
+   "kent_gault"
+  ],
+  "arietites": [
+   "dorset_lias",
+   "somerset"
+  ],
+  "asteroceras": [
+   "dorset_lias"
+  ],
+  "belemnite_guard": [
+   "*"
+  ],
+  "calymene_trilobite": [
+   "wales_midlands",
+   "overseas"
+  ],
+  "clypeus_echinoid": [
+   "cotswolds"
+  ],
+  "crinoid_general": [
+   "*"
+  ],
+  "dactylioceras": [
+   "yorkshire",
+   "overseas"
+  ],
+  "dalmanites_trilobite": [
+   "wales_midlands",
+   "overseas"
+  ],
+  "deshayesites": [
+   "isle_of_wight"
+  ],
+  "echinocorys_echinoid": [
+   "chalk_south",
+   "isle_of_wight",
+   "east_anglia",
+   "yorkshire"
+  ],
+  "eldredgeops_phacops": [
+   "overseas"
+  ],
+  "euhoplites": [
+   "kent_gault"
+  ],
+  "gryphaea_fossil": [
+   "dorset_lias",
+   "somerset",
+   "yorkshire",
+   "lincolnshire",
+   "cotswolds",
+   "wilts_berks_oxon"
+  ],
+  "harpoceras": [
+   "yorkshire",
+   "lincolnshire",
+   "somerset"
+  ],
+  "hemicidaris_echinoid": [
+   "cotswolds",
+   "dorset_other",
+   "wilts_berks_oxon"
+  ],
+  "hildoceras": [
+   "yorkshire",
+   "somerset"
+  ],
+  "hoplites": [
+   "kent_gault"
+  ],
+  "hybodus_shark_fin_spine": [
+   "dorset_lias",
+   "isle_of_wight"
+  ],
+  "lituites_cephalopod": [
+   "wales_midlands",
+   "overseas"
+  ],
+  "micraster_echinoid": [
+   "chalk_south",
+   "isle_of_wight",
+   "east_anglia",
+   "yorkshire"
+  ],
+  "montlivaltia_coral": [
+   "cotswolds",
+   "dorset_other",
+   "wilts_berks_oxon"
+  ],
+  "paradoxides_trilobite": [
+   "wales_midlands",
+   "overseas"
+  ],
+  "pecten_bivalve": [
+   "*"
+  ],
+  "perisphinctes": [
+   "wilts_berks_oxon",
+   "dorset_other"
+  ],
+  "phylloceras": [
+   "yorkshire",
+   "dorset_lias",
+   "somerset"
+  ],
+  "promicroceras": [
+   "dorset_lias"
+  ],
+  "rhynchonella_brachiopod": [
+   "*"
+  ],
+  "schloenbachia": [
+   "chalk_south",
+   "dorset_other",
+   "isle_of_wight"
+  ],
+  "spondylus_bivalve": [
+   "chalk_south",
+   "isle_of_wight",
+   "east_anglia"
+  ],
+  "terebratula_brachiopod": [
+   "*"
+  ]
+ },
+ "metrics": {
+  "top1": 0.841,
+  "top3": 0.939,
+  "macro_f1": 0.7695
+ },
+ "images_used": {
+  "train": 2384,
+  "val": 453,
+  "test": 459
+ }
+}
