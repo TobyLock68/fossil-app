@@ -76,7 +76,7 @@ Every file in this project plays a specific role in UI layout, background perfor
 
 `identifier.js` connects the user interface to the deep learning AI model. It handles model initialization, image transformation, neural network inference, and regional location adjustments.
 
-#### 💡 Key Technical Features & Code Choices:
+#### Key Technical Features & Code Choices:
 - **Model Initialization & Asset Fetching:**
   * On page load, `initFossilIdentifier()` fetches `./model/labels.json` to obtain the model metadata, species target array, normalization parameters (mean/standard deviation), and location maps.
   * Initializes an ONNX inference session via `ort.InferenceSession.create('./model/fossil_model.onnx')`, choosing WebGL or WASM hardware acceleration dynamically depending on the user's phone or computer.
