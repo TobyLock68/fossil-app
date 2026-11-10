@@ -1,4 +1,4 @@
-# 🦴 Fossil Collector Pro & AI Identifier
+# Fossil Collection Upload & AI Identifier
 
 An offline-first, browser-based Progressive Web App (PWA) designed for fossil collectors, field researchers, and paleontologists. 
 
@@ -8,7 +8,7 @@ This project solves two primary challenges in paleontology dataset collection an
 
 ---
 
-## 🏛️ System Architecture
+## System Architecture
 
 ```text
                      ┌──────────────────────────────────────────────┐
@@ -44,7 +44,7 @@ This project solves two primary challenges in paleontology dataset collection an
 
 ---
 
-## 📁 File Structure & Detailed Code Guide
+## File Structure & Detailed Code Guide
 
 Every file in this project plays a specific role in UI layout, background performance, database storage, serverless cloud uploads, or artificial intelligence execution. Below is an in-depth, beginner-friendly explanation of how each file works.
 
@@ -54,7 +54,7 @@ Every file in this project plays a specific role in UI layout, background perfor
 
 `index.html` is the core visual interface of the app. It displays the splash screen, the tab navigation bar, image upload controls, and the AI identification results panel.
 
-#### 💡 Key Technical Features & Code Choices:
+#### Key Technical Features & Code Choices:
 - **Mobile Standalone Shell:**
   * Uses `<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3.0, user-scalable=yes">` to enable responsive display across mobile devices while allowing user zooming when inspecting detailed specimen features.
   * Apple-specific meta tags (`apple-mobile-web-app-capable`) allow iOS users who tap "Add to Home Screen" to launch the website as a standalone mobile application without standard Safari browser address bars.
@@ -148,7 +148,7 @@ A serverless script hosted inside Google Workspace that receives uploaded fossil
 
 ---
 
-## 🛠️ Re-Training Pipeline Summary
+## Re-Training Pipeline Summary
 
 When new species images are gathered using the app and uploaded to Google Drive:
 
